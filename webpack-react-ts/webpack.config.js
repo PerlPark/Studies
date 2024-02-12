@@ -23,6 +23,20 @@ module.exports = {
 						}
 					}
 				]
+			},
+      {
+				test: /\.(ttf|otf|woff|woff2|eot)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts/',
+              publicPath: 'fonts/',
+              esModule: false
+						}
+					}
+				]
 			}
 		]
 	},
