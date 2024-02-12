@@ -1,1 +1,2 @@
-console.log("Hello, webpack");
+const text = "Loading...";
+console.log(text);
