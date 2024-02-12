@@ -6,6 +6,9 @@ module.exports = merge(config, {
   mode: 'production',
   optimization: {
     minimize: true,
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
